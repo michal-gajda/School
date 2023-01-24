@@ -5,11 +5,11 @@ using System.ComponentModel.DataAnnotations;
 public sealed class Student
 {
     public int Id { set; get; } = default;
-    [Required]
+    [Display(Name = "First Name"), Required]
     public string FirstName { set; get; } = string.Empty;
-    [Required]
+    [Display(Name = "Last Name"), Required]
     public string LastName { set; get; } = string.Empty;
-    [Required]
+    [Display(Name = "e-Mail"), Required]
     public string Email { set; get; } = string.Empty;
     [Required]
     public string Mobile { set; get; } = string.Empty;
